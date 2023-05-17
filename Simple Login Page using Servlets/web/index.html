@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Simple Login Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="login_page" method="post">
+            <!-- "Form action" in servlets or jsp's is a way to link an HTML form to the servlet (how the data gets sent to the servlet) -->
+             <!-- method refers to how the data is sent or fetched. Post is usually for sending data. -->
+            <label>Username:</label>
+             <input name="Username" type="text" placeholder="Enter Username">
+             <!-- When dealing with user input oor let me say, form data, we make use of "name" instead of "id"-->
+             <!-- ID is normally used when there is a need to uniquely identify an element, example. data in a radio group. -->   
+            <br>
+            <label>Password</label>
+            <input name="Password" type="password" placeholder="Enter Password">
+            <br>
+            <button type="submit"> login </button>
+            <!-- Buttons related to the form must always be in the form. -->
+        </form>
+        
+        
+    </body>
+</html>
